@@ -9,4 +9,4 @@ all: deps
 
 deps:
 	docker run --mount type=bind,source="$(current_dir)",target=/app python \
-		pip3 install -t . requests feedparser bs4
+		pip3 install -t /app requests feedparser bs4
